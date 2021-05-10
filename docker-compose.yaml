@@ -1,8 +1,8 @@
 version: "3.3"
 
 services:
-  applelikepear:
-    container_name: applelikepear
+  givgroov:
+    container_name: givgroov
     image: registry.timosur.com/givgroov
     environment:
       VIRTUAL_HOST: givgroov.de
