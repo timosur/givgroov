@@ -10,7 +10,7 @@ stages:
 deploy_vps:
   stage: deploy
   tags:
-    - docker
+    - local-script
   script:
     - docker build -t registry.timosur.com/givgroov .
     - docker-compose down
