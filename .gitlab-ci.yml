@@ -9,12 +9,9 @@ stages:
 
 deploy_vps:
   stage: deploy
-  image: docker/compose:latest
   tags:
     - docker
   script:
     - docker build -t registry.timosur.com/givgroov .
-    - docker image prune -f
-    - docker container prune -f
     - docker-compose down
     - docker-compose up -d
