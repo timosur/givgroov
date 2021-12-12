@@ -10,6 +10,7 @@ stages:
 deploy_vps:
   stage: deploy
   tags:
+    - surcloud
     - local-script
   script:
     - docker build -t registry.timosur.com/givgroov .

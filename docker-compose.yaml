@@ -5,8 +5,8 @@ services:
     container_name: givgroov
     image: registry.timosur.com/givgroov
     environment:
-      VIRTUAL_HOST: givgroov.home.timosur.com
-      LETSENCRYPT_HOST: givgroov.home.timosur.com
+      VIRTUAL_HOST: givgroov.de
+      LETSENCRYPT_HOST: givgroov.de
       LETSENCRYPT_EMAIL: info@givgroov.de
     expose:
       - 80
@@ -16,4 +16,4 @@ services:
 networks:
   jwilder:
     external:
-      name: jwilder
+      name: jwilder-proxy
