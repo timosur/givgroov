@@ -8,8 +8,6 @@ services:
       VIRTUAL_HOST: givgroov.de
       LETSENCRYPT_HOST: givgroov.de
       LETSENCRYPT_EMAIL: info@givgroov.de
-    expose:
-      - 80
     networks:
       - jwilder
 
